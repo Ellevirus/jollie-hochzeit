@@ -96,10 +96,9 @@
             }
 
             .language-switcher {
-                position: fixed;
-                top: 20px;
-                right: 20px;
-                z-index: 1000;
+                /* Remove the fixed positioning */
+                text-align: right;  /* Align to the right side */
+                margin-bottom: 20px;  /* Add some space before the heading */
             }
 
             .lang-btn {
@@ -111,7 +110,7 @@
                 border-radius: 3px;
                 font-size: 14px;
             }
-            
+
             .lang-btn:hover {
                 background: rgba(255, 255, 255, 1);
             }
@@ -136,11 +135,6 @@
 </head>
 <body>
 
-    <div class="language-switcher">
-        <a href="#" onclick="switchLanguage('de')" class="lang-btn">DE</a>
-        <a href="#" onclick="switchLanguage('en')" class="lang-btn">EN</a>
-    </div>
-
     <div class="header-image"></div>
     <div class="content">
 
@@ -155,6 +149,12 @@
         </nav>
 
         <div class="main-content">
+
+            <div class="language-switcher">
+                <a href="#" onclick="switchLanguage('de')" class="lang-btn">DE</a>
+                <a href="#" onclick="switchLanguage('en')" class="lang-btn">EN</a>
+            </div>
+
             <h1 data-de="Herzlich willkommen auf unserer Hochzeits-Website!" data-en="Welcome to our Wedding Website!">
                 Herzlich willkommen auf unserer Hochzeits-Website!
             </h1>
